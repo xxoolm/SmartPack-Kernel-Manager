@@ -2,14 +2,16 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <SwitchPreferenceCompat
-        android:key="useretardedmeasurement"
-        android:summary="@string/fahrenheit_summary"
-        android:title="@string/fahrenheit_title" />
-
-    <SwitchPreferenceCompat
-        android:key="forceenglish"
-        android:summary="@string/force_english" />
+    <PreferenceCategory>
+        <SwitchPreferenceCompat
+            android:key="forceenglish"
+            android:summary="@string/force_english"
+            android:title="Force english" />
+        <SwitchPreferenceCompat
+            android:key="useretardedmeasurement"
+            android:summary="@string/fahrenheit_summary"
+            android:title="@string/fahrenheit_title" />
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="user_interface"
